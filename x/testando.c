@@ -2,13 +2,7 @@
 
 int main () {
 
-    int x, y;
-
-    x = 10;
-    y = 20;
-
-    printf("%i\n", x);
-    printf("%i\n", y);
-
-    return 0;
+    double x;
+    x = 2.3456;
+    printf("%.2lf\n", x);
 }
