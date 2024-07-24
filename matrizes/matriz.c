@@ -11,9 +11,8 @@ int main ()
 
     int mat[N][M];
 
-    for (i = 0; i < N; i++)
-    { for (j = 0; j < M; j++)
-        {
+    for (i = 0; i < N; i++) {
+        for (j = 0; j < M; j++) {
             printf("Elemento [%i][%i]", i, j);
             scanf("%i", &mat[i][j]);
         }
@@ -21,11 +20,11 @@ int main ()
 
     printf("MATRIZ INSERIDA: \n");
 
-    for (i = 0; i < N; i++)
-    { for (j = 0; j < M; j++)
-        {
+    for (i = 0; i < N; i++) {
+        for (j = 0; j < M; j++) {
             printf("%i ", mat[i][j]);
         }
+        printf("\n");
         printf("\n");
     }
 
