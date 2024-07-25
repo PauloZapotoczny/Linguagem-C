@@ -1,19 +1,19 @@
 #include <stdio.h>
 
-int main(){
-    int minutos;
-    double valor;
+int main()
+{
+    double glicose;
 
-    printf("Digite a quantidade de minutos: ");
-    scanf("%d", &minutos);
+    printf("Digite a medida da glicose: ");
+    scanf("%lf", &glicose);
 
-    valor = 50.0;
-
-    if (minutos>100) {
-        valor = valor + (minutos - 100) * 2.0;
+    if (glicose < 100){
+        printf("Classificação: normal");
+    } else if (glicose > 100 && glicose < 140) {
+        printf("Classificação: elevado");
+    } else {
+        printf("Classificação: diabetes");
     }
-
-    printf("Valor a pagar: R$ %.2lf\n", valor);
 
 	return 0;
 }
