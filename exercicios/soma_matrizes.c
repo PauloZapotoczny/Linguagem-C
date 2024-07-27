@@ -10,6 +10,7 @@ int main ()
     scanf("%i", &M);
 
     int mat[N][M];
+    int vet[N];
 
     for (i = 0; i < N; i++){
         printf("Digite os conteudos da %ia linha: \n", i + 1);
@@ -20,11 +21,11 @@ int main ()
 
     printf("\nVETOR GERADO: \n");
     for (i = 0; i < N; i++){
-        int soma = 0;
+        vet[i] = 0;
         for (j = 0; j < M; j++){
-            soma = soma + mat[i][j];
+            vet[i] = vet[i] + mat[i][j];
         }
-        printf("\n %i", soma);
+        printf("\n %i", vet[i]);
     }
 
     return 0;
